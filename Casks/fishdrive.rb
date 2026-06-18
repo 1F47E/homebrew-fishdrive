@@ -3,7 +3,7 @@ cask "fishdrive" do
   version "0.1.0"
   sha256 "e5cc40377892a9bd4eb21d8ad6dfea5bfe0cd82a8534cd42ec35ba7a841748e7"
 
-  url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v0.1.0/fishdrive_v0.1.0_macos.zip"
+  url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/fishdrive_v#{version}_macos.zip"
   name "fishdrive"
   desc "Encrypted file offload to your own VPSes (menu-bar app)"
   homepage "https://github.com/1F47E/fishdrive"

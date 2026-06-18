@@ -7,11 +7,11 @@ class Fishctl < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v0.1.0/fishctl_v0.1.0_darwin_arm64.tar.gz"
+      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/fishctl_v#{version}_darwin_arm64.tar.gz"
       sha256 "000bdfd24fdddb7664764c14425b80971118ac7e6f84dc0aaa3214b7d996f560"
     end
     on_intel do
-      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v0.1.0/fishctl_v0.1.0_darwin_amd64.tar.gz"
+      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/fishctl_v#{version}_darwin_amd64.tar.gz"
       sha256 "3059176cf6ff78e51234ca51d7a1cb1b8393e10c7f4c105c9de5cf2db9cc7c4e"
     end
   end
