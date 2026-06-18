@@ -7,18 +7,18 @@ class Feeshd < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/1F47E/fishdrive/releases/download/v0.1.0/feeshd_v0.1.0_darwin_arm64.tar.gz"
+      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v0.1.0/feeshd_v0.1.0_darwin_arm64.tar.gz"
       sha256 "d014a5cb59a71967e0aa19d5bb51f9ee3e23f41a0f910a527483add30179229d"
     end
     on_intel do
-      url "https://github.com/1F47E/fishdrive/releases/download/v0.1.0/feeshd_v0.1.0_darwin_amd64.tar.gz"
+      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v0.1.0/feeshd_v0.1.0_darwin_amd64.tar.gz"
       sha256 "73985dd7951681a9067ec3abe0fac59654d5fc831e4ef827b8a6e92ea3a460a9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/1F47E/fishdrive/releases/download/v0.1.0/feeshd_v0.1.0_linux_amd64.tar.gz"
+      url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v0.1.0/feeshd_v0.1.0_linux_amd64.tar.gz"
       sha256 "f814460f39fe5329ba2886421b66384a1bdd965e868c1c523fcc2b16f6db6eb7"
     end
   end
