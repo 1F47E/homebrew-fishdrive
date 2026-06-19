@@ -2,17 +2,17 @@
 class Fishctl < Formula
   desc "fishdrive CLI: encrypted file offload to your own VPSes"
   homepage "https://github.com/1F47E/fishdrive"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/fishctl_v#{version}_darwin_arm64.tar.gz"
-      sha256 "9b258aac4f4c2f90edeb5ce4034d14d7e58e95005840680a7a4cd01817877a4f"
+      sha256 "244aa3a7017eda546396eb4bce5572b17a6ddc6e9aa29a39867b915ad821e21d"
     end
     on_intel do
       url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/fishctl_v#{version}_darwin_amd64.tar.gz"
-      sha256 "f4feba571940b728c12aa43232947da2effa0cc164b2d9a3b61658534d5952e3"
+      sha256 "10443aa1105827637cd17a149a3b480d1b5e06aa943628131b26ff2577078107"
     end
   end
 
@@ -21,6 +21,6 @@ class Fishctl < Formula
   end
 
   test do
-    assert_match "v0.3.0", shell_output("#{bin}/fishctl --version")
+    assert_match "v0.3.1", shell_output("#{bin}/fishctl --version")
   end
 end

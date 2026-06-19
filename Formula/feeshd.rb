@@ -2,24 +2,24 @@
 class Feeshd < Formula
   desc "fishdrive storage server (master/replica, one binary)"
   homepage "https://github.com/1F47E/fishdrive"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/feeshd_v#{version}_darwin_arm64.tar.gz"
-      sha256 "00ba71b53ddca90e9885d89d7381fe85e313d05430eef0f2895e04c6c8c33afd"
+      sha256 "f3feadaa89c4adff12ceb3f91f9c261fc1421c2160bfefa9be626990ce88a10c"
     end
     on_intel do
       url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/feeshd_v#{version}_darwin_amd64.tar.gz"
-      sha256 "916c0db9a3715e399209ffe216f6d2307ce7f667617a45547e0fbe2344cc4080"
+      sha256 "e3b51a626b36bfea4f151f0b424694101ba5586b84378cdb12f7718cd0a2e441"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/1F47E/homebrew-fishdrive/releases/download/v#{version}/feeshd_v#{version}_linux_amd64.tar.gz"
-      sha256 "b0ad140e03ba391bbed4cd98c1e34b8b2675f8272453b11c69c55d2688db034b"
+      sha256 "c7977c85886fecc9e1da1fe5f01129f8157e70748b9a04019c4ef6e929461f4f"
     end
   end
 
@@ -28,6 +28,6 @@ class Feeshd < Formula
   end
 
   test do
-    assert_match "v0.3.0", shell_output("#{bin}/feeshd version")
+    assert_match "v0.3.1", shell_output("#{bin}/feeshd version")
   end
 end
